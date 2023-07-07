@@ -35,6 +35,18 @@
     p{
         font-size: 1.2em;
     }
+    .foto1 img{
+        width: 19%;
+        height: 19%;
+    }
+    .wrap{
+        width: 40vw;
+        height: 40vh;
+    }
+    .eetp{
+        width: 40vw;
+        height: 40vh;
+    }
 }
 /*.............................................TABLET..............................................*/
 @media (min-width:672px), (max-width:1248px), (orientation:portrait){
