@@ -14,7 +14,6 @@
 /*MOVIL*/
 @media (max-width:575.98px) and (orientation:portrait){
     body{background: #FFFFFF;}
-}
 header{
     font-family:Georgia, 'Times New Roman', Times, serif;
     color:#FFFFFF;
@@ -73,6 +72,7 @@ button img{
     width: 0;
     border-right: 2px solid rgba(0,0,0,0);
     animation: animacionIntro 1s steps(8) 1s 1 normal both;
+    
 }
 /*COMANDO DE ANIMACIÓN TIPO MÁQUINA DE ESCRIBIR*/
 @keyframes animacionIntro{
@@ -311,4 +311,5 @@ li{
     text-align: justify;
     line-height: 2px;
     margin-bottom: 2em;
+}
 }
