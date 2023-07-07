@@ -608,7 +608,7 @@
     }
 }
 /*............................................TELEFONO..............................................*/
-@media (max-width:1520px) and (orientation:portrait){
+@media (max-width:720px) and (orientation:portrait){
     body{background: #FFFFFF;}
     header{
         font-family:Georgia, 'Times New Roman', Times, serif;
