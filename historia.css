@@ -12,7 +12,7 @@
     body{background: #FFFFFF;}
 }
 /*............................................TELEFONO..............................................*/
-@media (max-width:768px), (min-width:320px), (orientation:landscape){
+@media (max-width:768px), (min-width:320px), (orientation:portrait){
     body{background: #FFFFFF;}
 }
 header{
