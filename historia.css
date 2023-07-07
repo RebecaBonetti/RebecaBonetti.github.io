@@ -4,7 +4,7 @@
     border: 0;
 }
 /*........................................ESCRITORIO...............................................*/
-@media (min-width:1199.98px){
+@media (min-width:1280px) and (max-width:4128px){
     body{background: #FFFFFF;}
     header{
         font-family:Georgia, 'Times New Roman', Times, serif;
@@ -306,7 +306,7 @@
     }
 }
 /*.............................................TABLET..............................................*/
-@media (min-width:576px) and (max-width:991.98px) and (orientation:portrait){
+@media (min-width:672px) and (max-width:1248px) and (orientation:portrait){
     body{background: #FFFFFF;}
     header{
         font-family:Georgia, 'Times New Roman', Times, serif;
