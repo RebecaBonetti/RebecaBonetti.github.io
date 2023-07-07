@@ -160,7 +160,7 @@ h3:hover{
     background-position: center;
     position: relative;
     color: transparent;
-    border-radius: 10px;
+    border-radius: 2%;
 }
 .wrap-texto{
     text-align: center;
@@ -181,7 +181,7 @@ h3:hover{
 }
 /*IMAGEN EDIFICIO ACTUAL*/
 .eetp{
-    width: 40%;
+    width: 40vw;
     height: 40vh;
     margin-left: 43em;
     margin-top: -15em;
@@ -197,7 +197,7 @@ h3:hover{
     background-position: center;
     position: relative;
     color: transparent;
-    border-radius: 10px;
+    border-radius: 2%;
 }
 .eetp-texto{
     text-align: center;
@@ -218,8 +218,8 @@ h3:hover{
 }
 /*IMAGEN LOGO VIEJO*/
 .logoviejo img{
-    width: 35%;
-    height: 45%;
+    width: 35vw;
+    height: 45vh;
     margin-left: 4.5em;
     margin-top: 3em;
     display: flex;
@@ -234,7 +234,7 @@ h3:hover{
     background-position: center;
     position: absolute;
     color: transparent;
-    border-radius: 10px;
+    border-radius: 2%;
 }
 .logoviejo-texto{
     text-align: center;
@@ -271,7 +271,7 @@ h3:hover{
     background-position: center;
     position: relative;
     color: transparent;
-    border-radius: 10px;
+    border-radius: 2%;
 }
 .logonuevo-texto{
     text-align: center;
