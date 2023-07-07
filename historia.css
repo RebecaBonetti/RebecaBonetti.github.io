@@ -4,17 +4,17 @@
     border: 0;
 }
 /*........................................ESCRITORIO...............................................*/
-/*@media (min-width:1280px), (max-width:4128px){
+@media (min-width:1280px), (max-width:4128px){
     body{background: #FFFFFF;}
 }
 /*.............................................TABLET..............................................*/
-/*@media (min-width:672px), (max-width:1248px), (orientation:portrait){
+@media (min-width:672px), (max-width:1248px), (orientation:portrait){
     body{background: #FFFFFF;}
 }
 /*............................................TELEFONO..............................................*/
-/*@media (max-width:768px), (min-width:320px), (orientation:vertical){
+@media (max-width:768px), (min-width:320px), (orientation:vertical){
     body{background: #FFFFFF;}
-}*/
+}
 header{
     font-family:Georgia, 'Times New Roman', Times, serif;
     color:#FFFFFF;
@@ -28,7 +28,7 @@ header{
     )
     ,url(La\ gente\ de\ la\ inauguración\ del\ edificio.jpg);
     background-repeat: no-repeat;
-    height: 400px;
+    height: 600%;
 }
 /*LOGO ESCUELA*/
 button{
@@ -37,7 +37,7 @@ button{
 }
 button img{
     transition-duration: 0.5;
-    padding: 15px 15px;
+    padding: 15% 15%;
     display: inline-block;
     border: 0;
     margin: 0;
@@ -144,7 +144,7 @@ h3:hover{
 }
 /*IMAGEN EDIFICIO VIEJO*/
 .wrap{
-    width: 40vw;
+    width: 40%;
     height: 40vh;
     margin-left: 4em;
     margin-top: 3em;
@@ -181,7 +181,7 @@ h3:hover{
 }
 /*IMAGEN EDIFICIO ACTUAL*/
 .eetp{
-    width: 40vw;
+    width: 40%;
     height: 40vh;
     margin-left: 43em;
     margin-top: -15em;
@@ -255,7 +255,7 @@ h3:hover{
 }
 /*IMAGEN LOGO NUEVO*/
 .logonuevo{
-    width: 20vw;
+    width: 20%;
     height: 45vh;
     margin-left: 50em;
     margin-top: 1em;
@@ -310,6 +310,6 @@ li{
     margin-right: 4em;
     margin-top: 1.5em;
     text-align: justify;
-    line-height: 2px;
+    line-height: 2%;
     margin-bottom: 2em;
 }
