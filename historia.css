@@ -8,11 +8,11 @@
     body{background: #FFFFFF;}
 }
 /*.............................................TABLET..............................................*/
-@media (min-width:672px) and (max-width:1248px) and (orientation:portrait){
+@media (min-width:672px), (max-width:1248px), (orientation:portrait){
     body{background: #FFFFFF;}
 }
 /*............................................TELEFONO..............................................*/
-@media (max-width:1280px) and (min-width:720px) and (orientation:portrait){
+@media (max-width:1280px), (min-width:720px), (orientation:portrait){
     body{background: #FFFFFF;}
 }
 header{
