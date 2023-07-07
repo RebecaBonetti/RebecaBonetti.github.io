@@ -4,17 +4,17 @@
     border: 0;
 }
 /*........................................ESCRITORIO...............................................*/
-@media (min-width:1280px), (max-width:4128px){
+/*@media (min-width:1280px), (max-width:4128px){
     body{background: #FFFFFF;}
 }
 /*.............................................TABLET..............................................*/
-@media (min-width:672px), (max-width:1248px), (orientation:portrait){
+/*@media (min-width:672px), (max-width:1248px), (orientation:portrait){
     body{background: #FFFFFF;}
 }
 /*............................................TELEFONO..............................................*/
-@media (max-width:768px), (min-width:320px), (orientation:vertical){
+/*@media (max-width:768px), (min-width:320px), (orientation:vertical){
     body{background: #FFFFFF;}
-}
+}*/
 header{
     font-family:Georgia, 'Times New Roman', Times, serif;
     color:#FFFFFF;
