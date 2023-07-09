@@ -18,12 +18,13 @@
     .button img{
         height: 150px;
         width: 200px;
+        display: block;
     }
     .titulo1 h1{
         position: 50% vertical;
         text-align: center;
         orientation: portrait;
-        overflow: block;
+        display: block;
     }
     /*body{
         background: #FFFFFF;
@@ -78,6 +79,7 @@
         text-align: center;
         font-size:0.1em;
         orientation: vertical;
+        display: block;
     }
 }
 header{
