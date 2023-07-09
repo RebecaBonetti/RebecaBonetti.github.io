@@ -61,7 +61,7 @@
     header{
         background-image: 100%;
         background-position: 100% center;
-        background-size: 2000ex;
+        background-size: 2000px;
         background-position-y: center;
         background-position-x: center;
         padding: 0;
@@ -70,6 +70,11 @@
     }
     body{
         background: #FFFFFF;
+    }
+    .titulo1{
+        position: 0 center;
+        text-align: center;
+        font-size:0.1em;
     }
 }
 header{
