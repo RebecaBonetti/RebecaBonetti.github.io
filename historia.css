@@ -37,12 +37,13 @@
     }
     p{
         font-size: 1.2em;
-    }
+    }*/
     .foto1 img{
         width: 19%;
         height: 19%;
+        margin-left: 60em;
     }
-    .wrap{
+    /*.wrap{
         width: 40vw;
         height: 40vh;
     }
@@ -59,7 +60,7 @@
 @media (max-width:768px), (min-width:320px), (orientation:vertical){
     header{
         background-image: 100%;
-        background-position: 100%;
+        background-position: 100% center;
         background-size: 2000px;
         background-position-y: center;
         background-position-x: center;
@@ -70,6 +71,7 @@
     body{
         background: #FFFFFF;
     }
+
 }
 header{
     font-family:Georgia, 'Times New Roman', Times, serif;
