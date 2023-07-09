@@ -75,6 +75,7 @@
         position: 0 center;
         text-align: center;
         font-size:0.1em;
+        orientation: portrait;
     }
 }
 header{
