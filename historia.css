@@ -20,7 +20,7 @@
         width: 200px;
     }
     .titulo1{
-        position: 0%;
+        position: 0% center;
         text-align: center;
     }
     /*body{
@@ -57,11 +57,11 @@
     body{background: #FFFFFF;}
 }
 /*............................................TELEFONO..............................................*/
-@media (max-width:768px), (min-width:320px), (orientation:vertical){
+@media screen and (max-width:768px), (min-width:320px), (orientation:vertical){
     header{
         background-image: 100%;
         background-position: 100% center;
-        background-size: 2000px;
+        background-size: 2000ex;
         background-position-y: center;
         background-position-x: center;
         padding: 0;
@@ -71,7 +71,6 @@
     body{
         background: #FFFFFF;
     }
-
 }
 header{
     font-family:Georgia, 'Times New Roman', Times, serif;
