@@ -4,11 +4,11 @@
     border: 0;
 }
 /*........................................ESCRITORIO...............................................*/
-@media screen and (max-width:2500px) and (min-width:1078px){
+@media screen and (max-width:2500px) and (min-width:1078px), (orientation: vertical){
     header{
-        background-image: 100%;
-        background-position: 100%;
-        background-size: 2000px;
+        background-image: 100% center;
+        background-position: 100% center;
+        background-size: 2000px center;
         background-position-y: center;
         background-position-x: center;
         padding: 0;
@@ -55,15 +55,15 @@
     }*/
 }
 /*.............................................TABLET..............................................*/
-@media (min-width:672px), (max-width:1248px), (orientation:portrait){
+/*@media (min-width:672px) and (max-width:1248px), (orientation:portrait){
     body{background: #FFFFFF;}
-}
+}*/
 /*............................................TELEFONO..............................................*/
-@media screen and (max-width:768px), (min-width:320px), (orientation:vertical){
+@media screen and (max-width:768px) and (min-width:320px), (orientation:vertical){
     header{
-        background-image: 100%;
+        background-image: 100% center;
         background-position: 100% center;
-        background-size: 720px;
+        background-size: 720px center;
         background-position-y: center;
         background-position-x: center;
         padding: 0;
@@ -71,7 +71,7 @@
         border: 0;
     }
     body{
-        background: #FFFFFF;
+        background:#FFFFFF;
     }
     .titulo1{
         position: 0 center;
