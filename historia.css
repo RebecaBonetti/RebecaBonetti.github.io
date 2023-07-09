@@ -22,6 +22,7 @@
     .titulo1{
         position: 0% center;
         text-align: center;
+        orientation: vertical;
     }
     /*body{
         background: #FFFFFF;
@@ -75,7 +76,7 @@
         position: 0 center;
         text-align: center;
         font-size:0.1em;
-        orientation: portrait;
+        orientation: vertical;
     }
 }
 header{
