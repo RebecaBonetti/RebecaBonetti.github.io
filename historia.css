@@ -3,22 +3,27 @@
     padding: 0;
     border: 0;
 }
-/*........................................ESCRITORIO...............................................*/
-@media (min-width:1280px), (max-width:4128px){
+/*.......................................DE 1274px A 1000px.........................................*/
+@media  screen and (min-width:1000px) and (max-width:1274px){
     header{
-        padding:40px;
-        background-image: 100%;
+        background-image: 100% center;
+        background-position: 100% center;
+        background-position-y: center;
+        background-position-x: center;
         height: 2px;
-        padding: 0;
         margin: 0;
         border: 0;
     }
     .button img{
-        padding: 15px 15px;
+        height: 150px;
+        width: 200px;
+        display: block;
     }
-    .titulo1{
+    .titulo1 h1{
         padding: 40px;
         text-align: center;
+        text-shadow: 0.1em 0.1em #000000;
+        margin-left: 1.8em
     }
     body{
         background: #FFFFFF;
@@ -26,36 +31,122 @@
         margin:0;
         border: 0;
     }
-    h2{
-        padding: 1px;
+}
+/*....................................DE 1000px A 800px.............................................*/
+@media screen and (min-width:800px) and (max-width:1000px){
+    header{
+        background-image: 100% center;
+        background-position: 100% center;
+        background-position-y: center;
+        background-position-x: center;
+        height: 2px;
+        margin: 0;
+        border: 0;
     }
-    h2:hover{
-        overflow: hidden;
+    .button img{
+        height: 110px;
+        width: 150px;
+        display: block;
+        margin-right: 2em;
+        margin-top: -5em;
+    }
+    .titulo1 h1{
+        padding: 20px;
+        text-align: center;
+        font-family: hola;
+        text-shadow: 0.1em 0.1em #000000;
+        margin-left: 1.6em;
+    }
+    body{
+        background: #FFFFFF;
+        padding: 0;
+        margin:0;
+        border: 0;
     }
     p{
-        font-size: 1.2em;
+        margin-left: 4em;
+        margin-right: 20em;
     }
     .foto1 img{
-        width: 19%;
-        height: 19%;
-    }
-    .wrap{
-        width: 40vw;
-        height: 40vh;
-    }
-    .eetp{
-        width: 40vw;
-        height: 40vh;
+        width: 25%;
+        height: 25%;
     }
 }
-/*.............................................TABLET..............................................*/
-@media (min-width:672px), (max-width:1248px), (orientation:portrait){
-    body{background: #FFFFFF;}
+/*.........................................DE 800px A 300px...........................................*/
+@media screen and (min-width:300px) and (max-width:800px){
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    header{
+        background-image: 100% center;
+        background-position: 100% center;
+        background-position-y: center;
+        background-position-x: center;
+        height: 2px;    
+        margin: 0;
+        border: 0;
+        float: center;
+        object-fit: fill;
+    }
+    .button img{
+        height: 210px;
+        width: 250px;
+        display: block;
+        margin-right: 2em;
+        margin-top: -5em;
+    }
+    h1{
+        padding: 40px;
+        font-family: hola;
+        font-size: 1.50em;
+        position: portrait;
+        text-shadow: 0.1em 0.1em #000000;
+        margin-left: 1.3em;
+    }
+    body{
+        background: #FFFFFF;
+        padding: 0;
+        margin:0;
+        border: 0;
+        float: left;
+    }
+    h2{
+        padding: 10px;
+        font-size: 2em;
+    }
+    p{
+        margin-left: 4em;
+        margin-right: 10em;
+    }
+    .foto1 img{
+        float: right;
+        margin-right: 13em;
+    }
+    h3{
+        padding: 10px;
+        font-size: 2em;
+        margin-top: 1em;
+    }
+    article{
+        margin-left: 4em;   
+    }
+    .wrap img{
+        float: center;
+    }
+    .eetp img{
+        float: center;
+    }
+    .logoviejo img{
+       float: center;
+    }
+    .logonuevo img{
+        float: center;
+        margin-right: 13em;
+    }
 }
-/*............................................TELEFONO..............................................*/
-@media (max-width:768px), (min-width:320px), (orientation:vertical){
-    body{background: #FFFFFF;}
-}
+/*.......................................DISEÑO DE LA PÁGINA........................................*/
 header{
     font-family:Georgia, 'Times New Roman', Times, serif;
     color:#FFFFFF;
@@ -70,6 +161,7 @@ header{
     ,url(La\ gente\ de\ la\ inauguración\ del\ edificio.jpg);
     background-repeat: no-repeat;
     height: 600%;
+    display: flex;
 }
 /*LOGO ESCUELA*/
 button{
@@ -114,7 +206,6 @@ button img{
     width: 0;
     border-right: 2px solid rgba(0,0,0,0);
     animation: animacionIntro 1s steps(8) 1s 1 normal both;
-    
 }
 /*COMANDO DE ANIMACIÓN TIPO MÁQUINA DE ESCRIBIR*/
 @keyframes animacionIntro{
@@ -122,7 +213,7 @@ button img{
         width: 0%;
     }
     to{
-        width: 60%;
+        width: 80%;
         border-right: 2px solid;
         border-right: none;
     }
@@ -139,15 +230,17 @@ h2:hover{
     overflow:hidden;
     transition: 0.6s;
 }
+/*TEXTO MERCEDES*/
 p{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-right: 24em;
     margin-left: 4em;
     margin-top: 1em;
     text-align: justify;
     color: #787878;
 }
+/*TEXTO HISTORIA*/
 article{
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2em;
@@ -157,12 +250,12 @@ article{
     text-align: justify;
     color: #787878;
 }
-/*IMJAGEN MERCEDES*/
+/*IMAGEN MERCEDES*/
 .foto1 img{
     width: 19%;
     height: 19%;
-    margin-left: 55em;
-    margin-top: -14em;
+    margin-left: 60em;
+    margin-top: -16em;
     background-repeat: no-repeat;
     display: flex;
 }
@@ -353,4 +446,7 @@ li{
     text-align: justify;
     line-height: 2%;
     margin-bottom: 2em;
+}
+body{
+    background-color:#D5DBDB;
 }
