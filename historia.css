@@ -2,204 +2,38 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
-/*.......................................DE 1450px A 1000px.........................................*/
-@media  screen and (min-width:1200px) and (max-width:1450px)  {
-    *{
-        margin: 0;
-        padding: 0;
-        border: 0;
-    }
-    header{
-        background-image: 100% center;
-        background-position: 100% center;
-        background-position-y: center;
-        background-position-x: center;
-        height: 2px;
-        margin: 0;
-        border: 0;
-        float: center;
-        object-fit: fill;
-    }
-    .button img{
-        height: 150px;
-        width: 200px;
-        display: block;
-    }
-    .titulo1 h1{
-        padding: 40px;
-        text-align: center;
-        text-shadow: 0.1em 0.1em #000000;
-        margin-left: 1.8em
-    }
-    body{
-        background: #FFFFFF;
-        padding: 0;
-        margin:0;
-        border: 0;
-    }
-}
-/*....................................DE 1024px A 800px.............................................*/
-@media screen and (min-width:600px) and (max-width:1200px){
-    *{
-        margin: 0;
-        padding: 0;
-        border: 0;
-    }
-    header{
-        background-image: 100% center;
-        background-position: 100% center;
-        background-position-y: center;
-        background-position-x: center;
-        height: 2px;
-        margin: 0;
-        border: 0;
-        float: center;
-        object-fit: fill;
-    }
-    .button img{
-        height: 110px;
-        width: 150px;
-        display: block;
-        margin-right: 2em;
-        margin-top: -5em;
-    }
-    .titulo1 h1{
-        padding: 20px;
-        text-align: center;
-        font-family: hola;
-        text-shadow: 0.1em 0.1em #000000;
-        margin-left: 1.6em;
-    }
-    body{
-        background: #FFFFFF;
-        padding: 0;
-        margin:0;
-        border: 0;
-    }
-    p{
-        margin-left: 4em;
-        margin-right: 20em;
-    }
-    .foto1 img{
-        width: 25%;
-        height: 25%;
-    }
-}
-/*.........................................DE 800px A 280px...........................................*/
-@media screen and (min-width:280px) and (max-width:600px){
-    *{
-        margin: 0;
-        padding: 0;
-        border: 0;
-    }
-    header{
-        background-image: 100% center;
-        background-position: 100% center;
-        background-position-y: center;
-        background-position-x: center;
-        height: 2px;    
-        margin: 0;
-        border: 0;
-        float: center;
-        object-fit: fill;
-    }
-    .button img{
-        height: 210px;
-        width: 250px;
-        display: block;
-        margin-right: 2em;
-        margin-top: -5em;
-    }
-    h1{
-        padding: 40px;
-        font-family: hola;
-        font-size: 1.50em;
-        position: portrait;
-        text-shadow: 0.1em 0.1em #000000;
-        margin-left: 1.3em;
-    }
-    body{
-        background: #FFFFFF;
-        padding: 0;
-        margin:0;
-        border: 0;
-        float: left;
-    }
-    h2{
-        padding: 10px;
-        font-size: 2em;
-    }
-    p{
-        margin-left: 4em;
-        margin-right: 10em;
-    }
-    .foto1 img{
-        float: right;
-        margin-right: 13em;
-    }
-    h3{
-        padding: 10px;
-        font-size: 2em;
-        margin-top: 1em;
-    }
-    article{
-        margin-left: 4em;   
-    }
-    .wrap img{
-        float: center;
-        display: flex;
-    }
-    .eetp img{
-        float: center;
-    }
-    .logoviejo img{
-       float: center;
-    }
-    .logonuevo img{
-        float: center;
-        margin-right: 13em;
-    }
-}
-/*.......................................DISEÑO DE LA PÁGINA........................................*/
+/*.............................DISEÑO DE LA PÁGINA..............................*/
 header{
     font-family:Georgia, 'Times New Roman', Times, serif;
     color:#FFFFFF;
     font-weight: bold;
     font-size: 4em;
     padding: 2em;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.1),
-        rgba(0,0,0,0.1)
-    )
-    ,url(La\ gente\ de\ la\ inauguración\ del\ edificio.jpg);
+    background-image: linear-gradient(#2D2F7A, #4F52D6, #FFFFFF);
     background-repeat: no-repeat;
-    height: 600%;
+    height: 400px;
+    width: 100%;
     display: flex;
 }
-/*LOGO ESCUELA*/
-button{
+.boton1{
     background-color: transparent;
     border: 0;
 }
-button img{
+.boton1 a img{
     transition-duration: 0.5;
     padding: 15% 15%;
-    display: inline-block;
+    display: flex;
     border: 0;
     margin: 0;
     cursor: pointer;
-    height: 110%;
-    width: 110%;
     background-color: transparent;
     background-repeat: no-repeat;
     object-fit: fill;
-    margin-top: -10em;
-    margin-left: -10em;
-    position: relative;
+    position: fixed;
 }/*PONERLE QUE DIGA INICIO CON EL EFECTO*/
-.button:hover{
+.boton1 img:hover{
     color:#000000;
     opacity: 0.5;
 }
@@ -207,20 +41,31 @@ button img{
     font-family: hola;
     src: url(Vogue.ttf);
 }
+@font-face {
+    font-family: chau;
+    src: url(Buried\ Hopper.ttf);
+}
 /*TITULO HISTORIA*/
-.titulo1{
-    font-family: hola;
-    text-align:left;
+.titulo1 {
+    font-family: chau;
+    text-align: center;
+    letter-spacing: 10px;
     display: flex;
-    position: relative;
-    font-size: 0.9em;
+    margin-top: -1em;
+    margin-left: -2em;
+    position: absolute;
+    font-size: 1.1em;
     font-weight: 700;
     overflow: hidden;
     white-space: nowrap;/*ubica el texto en una sola linea*/
     color: #FFFFFF;
     width: 0;
-    border-right: 2px solid rgba(0,0,0,0);
     animation: animacionIntro 1s steps(8) 1s 1 normal both;
+}
+.titulo1:hover{
+    -webkit-transform:scale(1.1); transform:scale(1.1);
+    overflow: hidden;
+    transition: 0.6s;
 }
 /*COMANDO DE ANIMACIÓN TIPO MÁQUINA DE ESCRIBIR*/
 @keyframes animacionIntro{
@@ -237,11 +82,11 @@ button img{
 h2{
     font-family: hola;
     font-size: 2.5em;
-    margin-top: 1.5em;
-    color: #31404b;
+    color: #1C1266;
+    margin-top: 1em;
 }
 h2:hover{
-    -webkit-transform:scale(1.3);transform:scale(1.3);
+    -webkit-transform:scale(1.1);transform:scale(1.1);
     overflow:hidden;
     transition: 0.6s;
 }
@@ -249,7 +94,7 @@ h2:hover{
 p{
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.3em;
-    margin-right: 24em;
+    margin-right: 20em;
     margin-left: 4em;
     margin-top: 1em;
     text-align: justify;
@@ -267,10 +112,10 @@ article{
 }
 /*IMAGEN MERCEDES*/
 .foto1 img{
-    width: 19%;
-    height: 19%;
-    margin-left: 60em;
-    margin-top: -16em;
+    width: 25%;
+    height: 25%;
+    margin-left: 40em;
+    margin-top: -19em;
     background-repeat: no-repeat;
     display: flex;
 }
@@ -283,11 +128,11 @@ article{
 h3{
     font-family: hola;
     font-size: 2.5em;
-    margin-top: 0.5em;
-    color: #31404b;
+    margin-top: 2em;
+    color: #1C1266;
 }
 h3:hover{
-    -webkit-transform:scale(1.3);transform:scale(1.3);
+    -webkit-transform:scale(1.1);transform:scale(1.1);
     overflow:hidden;
     transition: 0.6s;
 }
@@ -304,7 +149,7 @@ h3:hover{
         rgb(0 0 0 / .2),
         rgb(0 0 0 / .2)
     )
-    ,url(antiguoedificio.jpg);
+    ,url(Imageneshistoria/antiguoedificio.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -325,15 +170,16 @@ h3:hover{
     -webkit-transform:scale(1.3);transform:scale(1.3);
     overflow:hidden;
     transition: 0.6s;
-    color: #000000;
+    background-color: #000000;
+    color: #FFFFFF;
     font-weight: bold;
 }
 /*IMAGEN EDIFICIO ACTUAL*/
 .eetp{
     width: 40vw;
-    height: 40vh;
-    margin-left: 43em;
-    margin-top: -15em;
+    height: 40.5vh;
+    margin-left: 33em;
+    margin-top: -15.5em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -341,14 +187,14 @@ h3:hover{
         rgb(0 0 0 / .2),
         rgb(0 0 0 / .2)
     )
-    ,url(eetp.jpg);
+    ,url(Imageneshistoria/eetp.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
     color: transparent;
     border-radius: 2%;
 }
-.eetp-texto{
+.eetp-texto {
     text-align: center;
     width: 50%;
     font-size: 2em;
@@ -362,52 +208,16 @@ h3:hover{
     -webkit-transform:scale(1.3);transform:scale(1.3);
     overflow:hidden;
     transition: 0.6s;
-    color: #000000;
+    background-color: #000000;
+    color: #FFFFFF;
     font-weight: bold;
 }
 /*IMAGEN LOGO VIEJO*/
-.logoviejo img{
-    width: 35vw;
-    height: 45vh;
-    margin-left: 4.5em;
+.logoviejo{
+    width: 40%;
+    height: 50vh;
+    margin-left: 4em;
     margin-top: 3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*background: linear-gradient(to right,
-        rgb(0 0 0 / .2),
-        rgb(0 0 0 / .2)
-    )
-    ,url(Escudo\ de\ la\ esc.jpg);*/
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    color: transparent;
-    border-radius: 2%;
-}
-.logoviejo-texto{
-    text-align: center;
-    width: 50%;
-    font-size: 2em;
-    font-family: 'Times New Roman', Times, serif;
-}
-.logoviejo img:hover {
-    opacity: 0.8;
-    color:#000000;
-}
-.logoviejo-texto:hover{
-    -webkit-transform:scale(1.3);transform:scale(1.3);
-    overflow:hidden;
-    transition: 0.6s;
-    color: #000000;
-    font-weight: bold;
-}
-/*IMAGEN LOGO NUEVO*/
-.logonuevo{
-    width: 20%;
-    height: 45vh;
-    margin-left: 50em;
-    margin-top: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -415,7 +225,45 @@ h3:hover{
         rgb(0 0 0 / .2),
         rgb(0 0 0 / .2)
     )
-    ,url(logo4.png);
+    ,url(Imageneshistoria/Escudo.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: transparent;
+    border-radius: 2%;
+}
+.logoviejo-texto{
+    text-align: center;
+    width: 50%;
+    font-size: 2em;
+    font-family:'Times New Roman', Times, serif;
+}
+.logoviejo:hover {
+    opacity: 0.8;
+    color:#000000;
+}
+.logoviejo-texto:hover{
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+    overflow:hidden;
+    transition: 0.6s;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+/*IMAGEN LOGO NUEVO*/
+.logonuevo{
+    width: 41%;
+    height: 50vh;
+    margin-left: 33em;
+    margin-top: -19.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,
+        rgb(0 0 0 / .2),
+        rgb(0 0 0 / .2)
+    )
+    ,url(Imageneshistoria/logo4.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -426,7 +274,7 @@ h3:hover{
     text-align: center;
     width: 50%;
     font-size: 2em;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Times New Roman', Times, serif;
 }
 .logonuevo:hover {
     opacity: 0.8;
@@ -436,17 +284,23 @@ h3:hover{
     -webkit-transform:scale(1.3);transform:scale(1.3);
     overflow:hidden;
     transition: 0.6s;
-    color: #000000;
+    background-color: #000000;
+    color: #FFFFFF;
     font-weight: bold;
+}
+/*VIDEO ESCUELA*/
+.videoescuela video{
+    margin-top: 2em;
+    margin-left: 16em;
 }
 h5{
     font-family: hola;
     font-size: 2.5em;
     margin-top: 2em;
-    color: #31404b;
+    color:#1C1266;
 }
 h5:hover{
-    -webkit-transform:scale(1.3);transform:scale(1.3);
+    -webkit-transform:scale(1.1);transform:scale(1.1);
     overflow:hidden;
     transition: 0.6s;
 }
@@ -463,43 +317,824 @@ li{
     margin-bottom: 2em;
 }
 body{
-    /*background-color:#D5DBDB;*/
     background-color: #FFFFFF;
 }
-.window-notice{
-    background: rgba(33, 41, 52, .85);
-    left: 0;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    display: flex;
-    position: fixed;
-    z-index: 999;
-}
-.window-notice .content{
-    background: transparent/*#919191*/;
-    border-radius: 2px;
-    box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
-    box-sizing: content-box;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    max-width: 400px;
-    min-width: 100px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    padding: 2rem;
-}    
 .img1 img{
-    width: 5%;
-    height: 5%;
-    margin-left: 17em;
-    cursor: pointer;
+    width: 50%;
+    height: 50%;
+    margin-left: 9em;
 }
-.img2 img{
+#popup-container {
+    display:none;
+}
+.block-scroll {
+    overflow:hidden;
+}
+#popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:rgba(255, 255, 255, 0.75);
+    padding: 10px 20px;
+}
+#popup-overlay{
+    background-color: rgba(0,0,0,0.8);
+    z-index: -1;
+}
+.full-layer{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+/*ESCRITORIO*/
+/*----------------------------------FOOTER GENERAL--------------------------------*/
+footer{
+    background-color: #333333;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    border: 0;
+    /*bottom: 0;*/
+    display: block;
+    flex-direction: column;
+}
+/*-------------------------------------------------------------------------------*/
+/*---------------------------------FOOTER contenedor*---------------------------*/
+.footer{
+    display: flex;
+    width: 100%;
+}
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------H1----------------------------------*/
+h1{
+    color: white;
+    font-size: 1.5em;
+    font-family:titulo;
+}
+@font-face{
+    font-family: titulo;
+    src: url(Vogue.ttf);
+}
+/*-------------------------------------------------------------------------------*/
+/*.---------------------------------ESCUELA-------------------------------------*/
+.escuela{
+    width: 25%;
+    margin-left: 1%;
+    margin-top: -1em;
+}
+.escuela h1{
+    margin-top: 70px;
+}
+/*ESCUELA IMAGEN*/
+.escuela img{
+    height: 150px;
+    width: 150px;
+    margin-left: 23%;
+}
+h6{
+    color: white;
+    margin-bottom: -15%;
+    text-align: justify;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 1.4em;
+    margin-left: 0.5EM;
+} 
+/*------------------------------TERMINA ESCUELA--------------------------------*/
+/*-----------------------------------CLIMA-------------------------------------*/
+.clima{
+    width: 30%;
+}
+.clima h1{
+    margin-top:  15%;
+}
+/*---------------------------------TERMINA CLIMA--------------------------------*/
+/*----------------------------------UBICACION----------------------------------*/
+.ubicacion{
+    width: 15%;
+}  
+.ubicacion h1{
+    margin-top: 35px;
+    margin-left: 1.5em;
+}
+.ubicacion img{
+    height: 10px;
+    width: 10px;
+    margin-right: 10%;
+    display: flex;
+} 
+/*---------------------------TERMINA UBICACION--------------------------------*/
+/*-----------------------------------DATOS------------------------------------*/
+.datos{
+    width: 40%;
+}
+.datos h1{
+    margin-top: 35px;  
+    margin-left: 1.5em;
+}
+/*------------------------------datos ubicación---------------------------------*/
+.textoubi{
+    color: white;
+    margin-left: 30%; 
+    position: relative; 
+    display: flex; 
+    top: -15px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 1em;
+}
+.imagenubi img{
+    height: 7%;
+    width: 7%;
+    margin-left: 20%;
+    display: flex;
+    position: relative;
+}
+/*---------------------------termina datos ubicación----------------------------*/
+/*--------------------------datos telefono--------------------------------------*/
+.textotelefono {
+    color: white;
+    margin-left: 30%;
     position: relative;
     display: flex;
-    width: 70%;
-    height: 70%;
+    top: -27px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 1em;
+}
+.imagentelefono img{
+    height: 7%;
+    width: 7%;
+    margin-left: 20%;
+    display: flex;
+    position: relative;
+}
+/*-------------------------termina datos telefono-------------------------------*/
+/*-------------------------------------datos gmail------------------------------*/
+.textogmail {
+    color: white;
+    margin-left: 30%;
+    position: relative;
+    display: flex;
+    top: -35px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 1em;
+}
+.imagengmail img{
+    height: 7%;
+    width: 7%;
+    margin-left: 20%;
+    display: flex;
+    position: relative;
+}
+/*--------------------------termina datos  gmail--------------------------------*/
+/*------------------------------TERMINA DATOS-----------------------------------*/
+/*-----------------------------COMIENZA CONTADOR--------------------------------*/
+.contadortitulo{ 
+    color: white;
+    font-size: 1.5em;
+    font-family:titulo;  
+    margin-left: 23%;
+    top: 25%;
+    margin-top: -15%;
+}
+/*----------------------------TERMINA CONTADOR----------------------------------*/
+.copy .texto{
+    margin-top: -2.1%;
+    margin-left: 42.5%;
+    color: #ffffff;
+}
+.copy a{
+    margin-top: -2%;
+    margin-left: 25%;
+    color: #ffffff;
+    position:absolute;
+    display: flex;
+}
+.copy a:hover {
+    color: blue;
+}
+.copy{
+    background-color: #242120;
+    padding: 2em;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 0 0;
+    border: 0;
+    display: flex;
+    height: 25px;
+}
+hr{
+    margin-top: -5.8%;
+}
+.redes {
+    position: relative;
+}
+.portfolio img{
+    height: 4%;
+    width: 4%;
+    position: relative;
+    float: left;
+    left: 30em;
+    top: 2.5em;
+    padding: 10px 10px;
+}
+.instagram img{
+    height: 5%;
+    width: 4%;
+    position: relative;
+    float: left;
+    left: 30em;
+    top: 2.5em;
+    padding: 10px 10px;
+}
+.facebook img{
+    height: 4%;
+    width: 4%;
+    position: relative;
+    float: left;
+    left: 30em;
+    top: 2.5em;
+    padding: 10px 10px;
+}
+/*------------------------------------------------------------------------------*/
+/*.............................DE 2560px A 1200px...............................*/
+/*------------------------------------------------------------------------------*/
+@media  screen and (min-width:1280px) {
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    header{
+        background-image: 100% center;
+        background-position: 100% center;
+        background-position-y: center;
+        background-position-x: center; 
+        height: 400px;
+        margin: 0;
+        border: 0;
+        float: center;
+        object-fit: fill;
+    }
+    /*boton*/
+    .titulo1 h1{
+        font-family: chau;
+        font-size: 2.5em;
+        text-align: center;
+        z-index: 1;
+        letter-spacing: 10px;
+        display: flex;
+        margin-left: 2.5em;
+        position: relative;
+        color: #FFFFFF;
+        font-weight: 700;
+        overflow: hidden;
+        white-space: nowrap;/*ubica el texto en una sola linea*/
+        color: #FFFFFF;
+        width: 0;
+        animation: animacionIntro 1s steps(8) 1s 1 normal both;
+    }
+    h2{
+        font-size: 3em;
+        position: absolute center;
+        margin-left: -1em;
+    }
+    p{
+        font-size: 1.5em;
+        position: relative;
+        margin-left: 4em;
+        margin-right: 22em;
+    }
+    h3 {
+        margin-left: -1em;
+        position: absolute center;
+        margin-top: 1em;
+        font-size: 3em;
+    }
+    article{
+        font-size: 1.5em;
+        margin-right: 4.5em;
+        margin-left: 4em;
+    }
+    .foto1 img{
+        margin-left: 58em;
+        margin-top: -20.5em;
+    }
+    .wrap {
+        margin-left: 12em;
+        width: 50%;
+        height: 6s0vh;
+    }
+    .eetp {
+        margin-top: 2em;
+        margin-left: 30em;
+        width: 50%;
+        height: 60vh;
+    }
+    .logoviejo {
+        margin-left: 12em;
+        width: 50%;
+        height: 70vh;
+    }
+    .logonuevo {
+        margin-top: 2em;
+        margin-left: 30em;
+        width: 50%;
+        height: 60vh;
+    }
+    .videoescuela {
+        margin-left: -5em;
+    }
+    li li{
+        list-style: none ;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1em;
+        color: #787878;
+        margin-left: 4em;
+        margin-right: 4em;
+        margin-top: 1.5em;
+        text-align: justify;
+        line-height: 2%;
+        margin-bottom: 2em;
+    }
+    h5 {
+        margin-left: -1em;
+        font-size: 3em;
+    }
+    .denominaciones {
+        font-size: 1.3em;
+    }
+    .directivos {
+        font-size: 1.3em;
+    }
+    .escuela {
+        margin-left: 4em;
+    }
+    .clima {
+        margin-left: -5em;
+    }
+    .clima h1 {
+        margin-left: -0.4em;
+        margin-top: 1.3em;
+    }
+    .ubicacion {
+        margin-left: -2em;
+        margin-top: -0.5em;
+    }
+    .ubicacion h1 {
+        margin-left: -0.5em;
+    }
+    .datos {
+        margin-left: -3em;
+    }
+    .datos h1 {
+        margin-left: -2em;
+    }
+    .copy a {
+        margin-left:29em;
+    }
+    .copy .texto {
+        margin-left: 38em
+    }
+    .portfolio img {
+        position: relative;
+        float: left;
+        left: 40em;
+        top: 2.6em;
+        padding: 10px 10px;
+    }
+    .instagram img {
+        position: relative;
+        float: left;
+        left: 40em;
+        top: 2.6em;
+        padding: 10px 10px;
+    }
+    .facebook img {
+        position: relative;
+        float: left;
+        left: 40em;
+        top: 2.6em;
+        padding: 10px 10px;
+    }
+    
+}
+/*------------------------------------------------------------------------------*/
+/*............................DE 1024px A 800px.................................*/
+/*------------------------------------------------------------------------------*/
+@media screen and (min-width:600px) and (max-width:1024px){
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    header{
+        background-image: 100% center;
+        background-position: 100% center;
+        background-position-y: center;
+        background-position-x: center;
+        height: 2px;
+        margin: 0;
+        border: 0;
+        float: center;
+        object-fit: fill;
+    }
+    .titulo1 h1{
+        font-family: chau;
+        font-size: 2em;
+        text-align: center;
+        z-index: 1;
+        letter-spacing: 10px;
+        display: flex;
+        margin-left: 2em;
+        position: relative;
+        color: #FFFFFF;
+        font-weight: 700;
+        overflow: hidden;
+        white-space: nowrap;/*ubica el texto en una sola linea*/
+        color: #FFFFFF;
+        width: 0;
+        animation: animacionIntro 1s steps(8) 1s 1 normal both;
+    }
+    h2{
+        margin-left: -1em;
+    }
+    p{
+        position: relative;
+        margin-left: 2em;
+        margin-right: 3em;
+        font-size: 1.3em;
+    }
+    h3{
+        margin-left: -1em;
+    }
+    article {
+        margin-left: 2em;
+        margin-right: 3em;
+    }
+    .foto1 img {
+        margin-top: 2em;
+        margin-left: 22em;
+        height: 30%;
+        width: 30%;
+    }
+    .wrap {
+        margin-left: 15em;
+        width: 50%;
+        height: 40vh;
+    }
+    .eetp{
+        margin-top: 3em;
+        margin-left: 15em;
+        width: 50%;
+        height: 40vh;
+    }
+    .logoviejo {
+        margin-left: 15em;
+        width: 50%;
+        height: 50vh;
+    }
+    .logonuevo {
+        margin-top: 3em;
+        margin-left: 15em;
+        width: 50%;
+        height: 45vh;
+    }
+    .videoescuela video {
+        margin-left: 12em;
+    }
+    li li{
+        list-style: none ;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.1em;
+        color: #787878;
+        margin-left: 4em;
+        margin-right: 4em;
+        margin-top: 1.5em;
+        text-align: justify;
+        line-height: 2%;
+        margin-bottom: 2em;
+    }
+    .footer{
+        width: 100%;
+    }
+    .escuela {
+        margin-left: 1em;
+    }
+    .escuela img {
+        margin-left: 10%;
+    }
+    .escuela h1 {
+        margin-left: 5em;
+    }
+    h6 {
+       margin-left: 0.2em;
+    }
+    .clima{
+        margin-left: -3.5em;
+    }
+    .clima h1 {
+        margin-top: 1.2em;
+    }
+    .ubicacion {
+        margin-left: -3.5em;
+    }
+    .ubicacion h1 {
+        margin-top: 1em;
+    }
+    .datos {
+        margin-left: 0.5em;
+    }
+    .datos h1{
+        margin-left: -3em;
+        margin-top: 1em;
+    }
+    .textoubi {
+        margin-left: 5.2em;
+    }
+    .imagenubi img {
+        margin-left: 3.2em;
+    }
+    .textotelefono {
+        margin-left: 5.2em;
+    }
+    .imagentelefono img {
+        margin-left: 3.2em;
+    }
+    .textogmail {
+        margin-left: 5.2em;
+    }
+    .imagengmail img {
+        margin-left: 3.2em;
+    }
+    .contadortitulo{
+        margin-left: 3.2em;
+    }
+    .copy a {
+        margin-left: 14em;
+        margin-top: -1.5em;
+    }
+    .copy .texto {
+        margin-left: 23em;
+        margin-top: -1.5em;
+    }
+    .portfolio img {
+        position: relative;
+        float: left;
+        left: 27em;
+        top: 3.2em;
+        padding: 10px 10px;
+    }
+    .instagram img {
+        position: relative;
+        float: left;
+        left: 27em;
+        top: 3.2em;
+        padding: 10px 10px;
+    }
+    .facebook img {
+        position: relative;
+        float: left;
+        left: 27em;
+        top: 3.2em;
+        padding: 10px 10px;
+    }
+}
+/*------------------------------------------------------------------------------*/
+/*.............................DE 600px A 70px...............................*/
+/*------------------------------------------------------------------------------*/
+@media screen and (min-width:70px) and (max-width:700px) {
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    header{
+        background-image: 100% center;
+        background-position: 100% center;
+        background-position-y: center;
+        background-position-x: center;
+        height: 2px;
+        margin: 0;
+        border: 0;
+        float: center;
+        object-fit: fill;
+    }
+    .titulo1 h1{
+        font-family: chau;
+        font-size: 1em;
+        /*text-align: center;*/
+        z-index: 1;
+        letter-spacing: 10px;
+        display: flex;
+        margin-left: 0.7em;
+        position: relative;
+        color: #FFFFFF;
+        font-weight: 700;
+        /*overflow: hidden;*/
+        white-space: nowrap;/*ubica el texto en una sola linea*/
+        color: #FFFFFF;
+        width: 0;
+        animation: animacionIntro 1s steps(8) 1s 1 normal both;
+    }
+    h2{
+        font-size: 2em;
+    }
+    p{
+        margin-left: 0.7em;
+        margin-right: 0.7em;
+    }
+    h3{
+        margin-top: 1em;
+        font-size: 2em;
+    }
+    article{
+        margin-left: 0.7em;
+        margin-right: 0.7em;
+    }
+    .foto1 img{
+        margin-left: 3.8em;
+        height: 70%;
+        width: 70%;
+        margin-top: 2em;
+    }
+    .wrap{
+        width: 90%;
+        height: 30vh;
+        margin-left: 1.2em;   
+    }
+    .eetp{
+        margin-top: 3em;
+        margin-left: 1.2em;
+        width: 90%;
+        height: 30vh;
+    }
+    .logoviejo{
+        width: 90%;
+        height: 40vh;
+        margin-left: 1.2em;
+        margin-top: 3em;
+    }
+    .logonuevo{
+        margin-left: 1.2em;
+        margin-top: 3em;
+        width: 90%;
+        height: 45vh;
+    }
+    .videoescuela video{
+        margin-left: 1.2em;
+        height: 90%;
+        width: 90%;
+    }
+    h5{
+        margin-top: 1em;
+        font-size: 2em;
+    }
+    /*li li{
+        list-style: none ;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.1em;
+        color: #787878;
+        margin-left: 4em;
+        margin-right: 4em;
+        margin-top: 1.5em;
+        text-align: justify;
+        line-height: 2%;
+        margin-bottom: 2em;
+    }*/
+    footer{
+        width: 100%;
+        height: 82em;
+        z-index: 1;
+        display: flex;
+        position: absolute;
+    }
+    .escuela img {
+        margin-left: 6.5em;
+    }
+    h6 {
+        text-align: justify;
+        font-size: 1.4em;
+        margin-left: 1em;
+        margin-right: -11Em;
+    }
+    .clima{
+        z-index: 1;
+        margin-top: -3em;
+    }
+    .clima h1 {
+        margin-top: 14em;
+        margin-left: 2em;
+    }
+    .ubicacion {
+        margin-left: -7.5em;
+        margin-top: 15em;
+    }
+    .ubicacion h1 {
+        margin-top: 15em;
+        margin-left: 1.8em;   
+    }
+    .datos {
+        margin-left: 0.5em;
+        margin-top: 15em;
+    }
+    .datos h1{
+        margin-left: -3em;
+        margin-top: 27em;
+    }
+    .textoubi {
+        margin-left: -3em;
+        margin-top: -1em;
+        font-size: 1.2em;
+    }
+    .imagenubi img {
+        margin-left: -7em;
+        margin-top: 2em;
+        height: 20%;
+        width: 20%;
+    }
+    .textotelefono {
+        margin-left: -3em;
+        margin-top: -0.1em;
+        font-size: 1.2em;
+    }
+    .imagentelefono img {
+        margin-left: -7em;
+        margin-top: 1em;
+        height: 20%;
+        width: 20%;
+    }
+    .textogmail {
+        margin-left: -3em;
+        margin-top: -0.1em;
+        font-size: 1.2em;
+    }
+    .imagengmail img {
+        margin-left: -7em;
+        margin-top: 1em;
+        height: 20%;
+        width: 20%;
+    }
+    .contadortitulo{
+        margin-left: -3.5em;
+        margin-top: -2em;
+    }
+    .contador a img{
+        margin-left: -3em;
+        margin-top: 10em;
+    }
+    .copy{
+        margin-top: 15em;
+        z-index: 1;
+        /*ARREGLAR*/
+    }
+    .copy a {
+        margin-left: 5.5em;
+        margin-top: -2em;
+        z-index: -1em;
+    }
+    .copy .texto {
+        margin-left: 1em;
+        margin-top: -0.8em;
+        z-index: -1;
+        text-align: center;
+    }
+    /*ARREGLAR*/
+    .portfolio img {
+        position: relative;
+        float: left;
+        left: 27em;
+        top: -10em;
+        padding: 10px 10px;
+        z-index: -1;
+    }
+    /*ARRREGLAR*/
+    .instagram img {
+        position: relative;
+        float: left;
+        left: 27em;
+        top: -10em;
+        padding: 10px 10px;
+        z-index: -1;
+    }
+    /*ARREGLAR*/
+    .facebook img {
+        position: relative;
+        float: left;
+        left: 27em;
+        top:-10em;
+        padding: 10px 10px;
+        z-index: -1;
+    }
 }
