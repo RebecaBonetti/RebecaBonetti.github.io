@@ -581,7 +581,7 @@ hr{
 /*------------------------------------------------------------------------------*/
 /*.............................DE 1024px A 1200px...............................*/
 /*------------------------------------------------------------------------------*/
-@media  screen and (min-width:1024px) and (2000px) {
+@media  screen and (min-width:1024px) and (max-width:2000px) {
     *{
         margin: 0;
         padding: 0;
@@ -1042,9 +1042,9 @@ hr{
     }
 }
 /*------------------------------------------------------------------------------*/
-/*.............................DE 600px A 70px..................................*/
+/*.............................DE 800px A 500px..................................*/
 /*------------------------------------------------------------------------------*/
-@media screen and (min-width:100px) and (max-width:800px) {
+@media screen and (min-width:500px) and (max-width:800px) {
     *{
         margin: 0;
         padding: 0;
@@ -1324,6 +1324,311 @@ hr{
         top: 5em;
         width: 6%;
         height: 6%;
+        padding: 10px 10px;
+        z-index: 1;
+    }
+}
+/*------------------------------------------------------------------------------*/
+/*............................DE 500px A 200px.................................*/
+/*------------------------------------------------------------------------------*/
+@media screen and (min-width:200px) and (max-width:500px) {
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    header{
+        background-image: 100% center;
+        background-position: 100% center;
+        background-position-y: center;
+        background-position-x: center;
+        height: 2px;
+        margin: 0;
+        border: 0;
+        float: center;
+        object-fit: fill;
+    }
+    .titulo1 h1{
+        font-family: chau;
+        font-size: 1.2em;
+        z-index: 1;
+        letter-spacing: 10px;
+        display: flex;
+        margin-top: -0.5em;
+        left: -2em;
+        position: relative;
+        color: #FFFFFF;
+        font-weight: 700;
+        overflow: hidden;
+        white-space: nowrap;/*ubica el texto en una sola linea*/
+        color: #FFFFFF;
+        width: 0;
+        animation: animacionIntro 1s steps(8) 1s 1 normal both;
+    }
+    .logo1{
+        background-color: transparent;
+        border: 0;
+    }
+    .logo1 a img{
+        transition-duration: 0.5;
+        display: flex;
+        border: 0;
+        margin: 0;
+        cursor: pointer;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        object-fit: fill;
+        position: absolute;
+        width: 15%;
+        height: 17%;
+        margin-top: -2em;
+        margin-left: -2em;
+    }
+    /*PONERLE QUE DIGA INICIO CON EL EFECTO*/
+    .logo1 a img:hover{
+        color:#000000;
+        opacity: 0.5;
+    }
+    h2{
+        font-size: 2em;
+    }
+    p{
+        margin-left: 2em;
+        margin-right: 2em;
+        font-size: 1em;
+    }
+    h3{
+        font-size: 2em;
+    }
+    article{
+        margin-left: 2em;
+        margin-right: 2em;
+        font-size: 1em;
+    }
+    .foto1 img{
+        margin-left: 9em;
+        height: 30%;
+        width: 30%;
+        margin-top: 2em;
+    }
+    .wrap{
+        width: 90%;
+        height: 30vh;
+        margin-left: 1.5em;
+        margin-right: 3em;  
+    }
+    .eetp{
+        margin-top: 3em;
+        margin-left: 1.5em;
+        margin-right: 3em;
+        width: 90%;
+        height: 30vh;
+    }
+    .logoviejo{
+        width: 90%;
+        height: 40vh;
+        margin-left: 1.5em;
+        margin-right: 3em;
+        margin-top: 3em;
+    }
+    .logonuevo{
+        margin-left: 1.5em;
+        margin-right: 3em;
+        margin-top: 3em;
+        width: 90%;
+        height: 45vh;
+    }
+    .videoescuela video{
+        margin-left: 1.5em;
+        margin-right: 2em;
+        height: 90%;
+        width: 90%;
+    }
+    h5{
+        margin-top: 1em;
+        font-size: 2em;
+    }
+    /*li li{
+        list-style: none ;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.1em;
+        color: #787878;
+        margin-left: 4em;
+        margin-right: 4em;
+        margin-top: 1.5em;
+        text-align: justify;
+        line-height: 2%;
+        margin-bottom: 2em;
+    }*/
+    .pal1 {
+        font-size: 0.7em;
+        margin-left: -1em;
+        line-height: 0%;
+    }
+    .img1 img{
+        width: 50%;
+        height: 50%;
+        margin-left: 9em;
+    }
+    #popup-container {
+        display:none;
+    }
+    .block-scroll {
+        overflow:hidden;
+    }
+    #popup-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color:rgba(255, 255, 255, 0.75);
+        padding: 10px 20px;
+    }
+    #popup-overlay{
+        background-color: rgba(0,0,0,0.8);
+        z-index: -1;
+    }
+    .full-layer{
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    footer{
+        width: 100%;
+        height: 30em;
+        z-index: 1;
+        display: flex;
+        position: absolute;
+    }
+    .escuela img {
+        margin-left: 1em;
+        margin-top: 1em;
+        height: 25%;
+        width: 70%;
+    }
+    h6 {
+        text-align: justify;
+        font-size: 1.2em;
+        margin-left: 7em;
+        margin-right: -15em;
+        margin-top: -4.5em;
+    }
+    .clima{
+        display: none;
+    }
+    .clima h1 {
+        display: none;
+    }
+    .ubicacion {
+        display: none;
+    }
+    .ubicacion h1 {
+        display: none;   
+    }
+    .datos {
+        margin-left: 4em;
+        margin-top: -32em;
+    }
+    .datos h1{
+        margin-left: -3em;
+        margin-top: 27em;
+    }
+    .textoubi {
+        margin-left: -3.5em;
+        margin-top: -0.5em;
+        font-size: 1em;
+    }
+    .imagenubi img {
+        margin-left: -7em;
+        margin-top: 1em;
+        height: 15%;
+        width: 15%;
+    }
+    .textotelefono {
+        margin-left: -3.5em;
+        margin-top: -0.5em;
+        font-size: 1em;
+    }
+    .imagentelefono img {
+        margin-left: -7em;
+        margin-top: 0.5em;
+        height: 15%;
+        width: 15%;
+    }
+    .textogmail {
+        margin-left: -3.5em;
+        font-size: 1em;
+        margin-top: 0.5em;
+    }
+    .imagengmail img {
+        margin-left: -7em;
+        margin-top: -1em;
+        height: 15%;
+        width: 15%;
+    }
+    .contadortitulo{
+        margin-left: -3em;
+        margin-top: -3.5em;
+    }
+    .contador a img{
+        margin-left: -4em;
+        margin-top: 1em;
+    }
+    .copy{
+        margin-top: 15em;
+        z-index: -1;
+        background-color: #242120;
+        padding: 2em;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        margin: 0 0 0 0;
+        border: 0;
+        display: flex;
+        height: 6em;
+    }
+    .copy a {
+        margin-left: 7em;
+        margin-top: -2em;
+        z-index: -1em;
+    }
+    .copy .texto {
+        margin-left: 1em;
+        margin-top: -0.5em;
+        z-index: -1;
+        text-align: center;
+    }
+    .portfolio img {
+        position: relative;
+        float: left;
+        left: 10em;
+        top: 7em;
+        width: 10%;
+        height: 10%;
+        padding: 10px 10px;
+        z-index: 1;
+    }
+    .instagram img {
+        position: relative;
+        float: left;
+        left: 10em;
+        top: 7em;
+        width: 10%;
+        height: 10%;
+        padding: 10px 10px;
+        z-index: 1;
+    }
+    .facebook img {
+        position: relative;
+        float: left;
+        left: 10em;
+        top: 7em;
+        width: 10%;
+        height: 10%;
         padding: 10px 10px;
         z-index: 1;
     }
