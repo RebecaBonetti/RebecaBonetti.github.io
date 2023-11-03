@@ -54,6 +54,7 @@ header{
     font-family: chau;
     text-align: center;
     letter-spacing: 10px;
+    z-index: 1;
     display: flex;
     margin-left: 1.2em;
     margin-top: -0.3em;
@@ -1205,7 +1206,7 @@ hr{
     }
     footer{
         width: 100%;
-        height: 45em;
+        height: 25em;
         z-index: 1;
         display: flex;
         position: absolute;
@@ -1223,20 +1224,24 @@ hr{
         z-index: 1;
         margin-top: -5em;
         margin-left: 12em;
+        display: none;
     }
     .clima h1 {
         margin-top: 5em;
+        display: none;
     }
     .ubicacion {
         margin-left: -32em;
+        display: none;
     }
     .ubicacion h1 {
         margin-top: 15em;
         margin-left: 1.8em;   
+        display: none;
     }
     .datos {
-        margin-left: 10em;
-        margin-top: -18em;
+        margin-left: 12em;
+        margin-top: -38em;
     }
     .datos h1{
         margin-left: -3em;
@@ -1301,7 +1306,7 @@ hr{
         position: relative;
         float: left;
         left: 20em;
-        top: 5em;
+        top: 6.5em;
         width: 6%;
         height: 6%;
         padding: 10px 10px;
@@ -1311,7 +1316,7 @@ hr{
         position: relative;
         float: left;
         left: 20em;
-        top: 5em;
+        top: 6.5em;
         width: 6%;
         height: 6%;
         padding: 10px 10px;
@@ -1321,7 +1326,7 @@ hr{
         position: relative;
         float: left;
         left: 20em;
-        top: 5em;
+        top: 6.5em;
         width: 6%;
         height: 6%;
         padding: 10px 10px;
@@ -1331,7 +1336,7 @@ hr{
 /*------------------------------------------------------------------------------*/
 /*............................DE 500px A 200px.................................*/
 /*------------------------------------------------------------------------------*/
-@media screen and (min-width:200px) and (max-width:500px) {
+@media screen and (min-width:320px) and (max-width:500px) {
     *{
         margin: 0;
         padding: 0;
@@ -1351,7 +1356,6 @@ hr{
     .titulo1 h1{
         font-family: chau;
         font-size: 1.2em;
-        z-index: 1;
         letter-spacing: 10px;
         display: flex;
         margin-top: -0.5em;
@@ -1379,8 +1383,8 @@ hr{
         background-repeat: no-repeat;
         object-fit: fill;
         position: absolute;
-        width: 15%;
-        height: 17%;
+        width: 17%;
+        height: 15%;
         margin-top: -2em;
         margin-left: -2em;
     }
@@ -1466,9 +1470,10 @@ hr{
         line-height: 0%;
     }
     .img1 img{
-        width: 50%;
-        height: 50%;
-        margin-left: 9em;
+        width: 80%;
+        height: 80%;
+        margin-left: 1.5em;
+        z-index: 1;
     }
     #popup-container {
         display:none;
